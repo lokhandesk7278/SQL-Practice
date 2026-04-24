@@ -21,3 +21,11 @@ from (
 ) A
 group by team_name
 order by no_of_matches_won desc;
+
+/*Explanation :
+The query calculates team-wise performance from the icc_world_cup table by first transforming match data into a team-centric format and then aggregating results.
+Since each match row contains two teams (team_1 and team_2), a subquery is used with UNION ALL to split every match into two rows—one for each team—so that each team appears separately. 
+Inside this subquery, a CASE statement assigns a win_flag of 1 if the team is the winner and 0 otherwise, effectively marking wins and losses. 
+The outer query then groups these rows by team_name using GROUP BY and applies aggregate functions:
+COUNT(1) to calculate the total matches played, SUM(win_flag) to count wins, and the difference between them to compute losses.
+Finally, the results are sorted in descending order of wins using ORDER BY, giving a clear leaderboard-style summary of team performance.*/
