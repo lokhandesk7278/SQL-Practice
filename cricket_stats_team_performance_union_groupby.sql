@@ -1,3 +1,26 @@
+/*You are given a table containing match information from a tournament.
+Each record represents a match between two teams and the winner of that match.
+
+Write a SQL query to generate a points table that shows for each team:
+
+Matches played
+
+Wins
+
+Losses
+
+Points (2 points per win)
+
+📂 Table Structure
+
+create table icc_world_cup
+(
+    team_1 varchar(20),
+    team_2 varchar(20),
+    winner varchar(20)
+);
+*/
+
 create table icc_world_cup
 (
 Team_1 Varchar(20),
