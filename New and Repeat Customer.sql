@@ -1,3 +1,30 @@
+/*You are working on an e-commerce platform (Amazon-like).
+
+Every day:
+
+Customers place orders
+
+Some customers are new (first-time buyers)
+
+Some customers are repeat buyers
+
+🎯 Goal
+
+For each day, find:
+
+Number of new customers
+
+Number of repeat customers
+
+🧱 Table Structure
+
+CREATE TABLE customer_orders (
+    order_id INTEGER,
+    customer_id INTEGER,
+    order_date TEXT,      -- YYYY-MM-DD
+    order_amount INTEGER
+);*/
+
 create table customer_orders (
 order_id integer,
 customer_id integer,
